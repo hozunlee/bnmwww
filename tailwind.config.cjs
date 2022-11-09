@@ -1,31 +1,21 @@
 /** @type {import('tailwindcss').Config} */
+// eslint-disable-next-line no-undef
 module.exports = {
-  content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
+  content: ['./src/**/*.{js,jsx,ts,tsx}'],
   theme: {
     extend: {
       colors: {
-        'one-red': '#8AAAE5',
-        'two-yellow': '#FEFEFE',
+        main: '#8AAAE5',
+        sub: '#FEFEFE',
       },
     },
     screens: {
-      '3xl': { max: '2000px' },
-      '2xl': { max: '1535px' },
-      // => @media (max-width: 1535px) { ... }
-
-      xl: { max: '1279px' },
-      // => @media (max-width: 1279px) { ... }
-
-      lg: { max: '1023px' },
-      // => @media (max-width: 1023px) { ... }
-
-      md: { max: '767px' },
-      // md 이상 큰거
-      // md 미만 모바일
-      // => @media (max-width: 767px) { ... }
-
-      sm: { max: '639px' },
-      // => @media (max-width: 639px) { ... }
+      xs: '480px',
+      sm: '640px',
+      md: '768px',
+      lg: '1024px',
+      xl: '1280px',
+      // '2xl': '1536px',
     },
   },
   plugins: [],
